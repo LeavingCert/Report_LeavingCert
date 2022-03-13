@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+  
+<header>
+    <h1> Home Automation System Coursework report</h1>
+
+    <link rel="stylesheet" href="styles.css">
+</header>
+<!-- ######################################################################################### -->
+<!-- Nevigation Tag starts here.  -->
+<!-- Navigation Tag is used to create a nevigation bar.
+   Li tag is used to display Nevigation ode is used to dipsly the contect  -->
+   
+<nav>
+  <ul>
+    <li><a href="#section-1">Investigation and Plan</a></li>
+    <li><a href="#section-2">Design</a></li>
+    <li><a href="#section-3">Implementation and Testing</a></li>
+    <li><a href="#section-4">Evaluation </a></li>
+    <li><a href="#section-5">References</a></li>
+    <li><a href="#section-6">Summary word count</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="section-1">
+    <h1>1: Introduction:</h1>
+    <p>Smart homes incorporate automation systems to provide residents with increased convenience, security, energy efficiency and solutions to climate control. Networked 
+      devices connect directly/indirectly via a gateway to the internet in order to control/regulate household functions. In 2021, the smart home penetration rate worldwide
+       was at 12.2%, the number of smart homes worldwide was >258 million and the forecast smart home market worldwide was at 99.41 bn USD [1].       
+      </p>
+      <table style="width:100%">
+       <tr>
+         <td>As illustrated in the graph, statistics reveal that the average electricity prices for households have been steadily increasing over the last ten years.                  
+        </td>
+         <td><img src="img/1.png" > </td>
+       </tr>
+
+       <tr>
+         <td><img src="img/2.png" ></td>
+         <td>Global Warming/Consequences
+          CO2 emissions worldwide increased from 6 billion to over 34 billion tonnes between 1950 & 2020 [3]. 
+          NASA statistics reveal that from 1800-2021 global surface temperatures increased significantly (-0.1 to 0.8°C). 2021 had the 6th highest temperature on record (NOAA, 2021) due to global warming [4]. 
+          In British Columbia, in 2021, 595 deaths occurred related to temperatures > 40 °C (‘heat-dome’), 70% of the dead were aged >70  years and 99% overheated inside a home/hotel [5]. 
+          In Ireland 1983-2013, 294 deaths were caused by seven heatwaves [6]. 
+          The elderly/disabled are at increased risk during heatwaves [7]. Hyperthermia, is a thermoregulatory disorder where core temperature increases > 40.5°C is a medical emergency. Early recognition of heat increases (externally/internally) is required to reduce the thermal risk [8].
+          
+          </td>
+       </tr>
+       <tr>
+         <td><img src="img/3.png"> <br> [9]</br></td>
+         <td>Disabilities:
+          ‘Persons with disabilities’ are “… all persons with disabilities including those who have long-term physical, mental, intellectual or sensory impairments” [8].
+          The CSO (2016) reported that overall 262,818 people had difficulties with basic physical activities [9].
+          </td>
+       </tr>
+       <tr>
+         <td>Forecast Smart Home Market worldwidz <br>https://www.statista.com/topics/2430/smart-homes/#dossierKeyfigures</td>
+         <td><img src="img/4.png"></td>
+        </tr>
+      </table>
+      <br>
+      <h1>Plan:</h1>
+      <p>Based on this research, it is proposed to develop a smart fan embedded home automation systems which will reduce the users risk of hyperthermia indoors during heatwaves.</p>
+    </br>
+      <br>
+      <h1>End-Users/Stakeholders:</h1>
+         <p>Persons with disabilities/Older persons/General population.</p>
+         <br>
+         <h1>Artefacts to be develop:</h1>
+   
+         <table>
+           <tr>
+             <th>Potential Solutions:</th>
+             <th>User</th>
+             <th>Problem addressed:</th>
+           </tr>
+           <tr>
+             <td>Heating, ventilation and air condition (HVAC) Automatic temperature control </td>
+             <td>Persons with intellectual/physical disabilities at risk from temperature increases</td>
+             <td>Prevent hyperthermia (Heat)/ Hyperthermia(Cold) for persons unable to understand/respond to the risks</td>
+            
+           </tr>
+           <tr>
+             <td>Automatic Window Open/Close </td>
+             <td>General public</td>
+             <td>Reduction of noise pollution above 70dB and air circulation</td>
+            
+           </tr>
+           <tr>
+            <td>Smart Door Open/Close Automatically </td>
+            <td>Wheelchair users</td>
+            <td>Removes accessibility problems entering/exiting rooms/buildings</td>
+          
+          </table>
+         <br>
+   </br>
+      <h1>Existing Solution:</h1>
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Products/Function</th>
+          <th>User</th>
+          <!-- <th>Website </th> -->
+        </tr>
+        <tr>
+          <td>The Google Nest Learning Thermostat (2022) [10]</td>
+          <td>Adjusts temperatures to optimal levels</td>
+          <td>General population</td>
+          <!-- <td>https://store.google.com/product/nest_learning_thermostat_3rd_gen</td> -->
+        </tr>
+        <tr>
+          <td>Lilli [11]</td>
+          <td>Web-based interface monitors behaviours</td>
+          <td>People self-limiting conditions</td>
+          <!-- <td>https://www.intelligentlilli.com/</td> -->
+        </tr> 
+        <tr>
+          <td>Hunter Fans [12]</td>
+          <td>Smart ceiling fan, motion sensor integrates with thermostat.</td>
+          <td>General population</td>
+          <!-- <td>https://www.hunterfan.eu/</td> -->
+        </tr>
+      </table>
+    
+      <br>
+      <h1>Social Implications: </h1>
+      <p>Social Implications of the embedded home automation system will include increased independence for users, reduction of their risk of hyperthermia indoors during 
+        heatwaves providing reassurance and reductions in energy costs/consumption. It will contribute to The National Housing Strategy for
+         Disabled People’s 2022-2027 [13] aim to increase the provision of accessible homes/information/technology to promote people’s participation
+         in their communities and assist in the practical implementation of legislated guidelines from The United Nations Convention on the Rights 
+         of Persons with Disabilities (2015)/The National Positive Ageing Strategy (2015) [14,15]. Dependency on the internet,
+          privacy interference and the expense of implementation/maintenance creating disparities in uptake are some ethical concerns. The website will make the products accessible. 
+        </p>
+        </br>
+        <br>
+      <h1>Refine list and describe the objectives for the artifacts that you will develop: </h1>
+        <table>
+          <tr>
+            <th>Artifacts</th>
+            <th>Objectives </th>
+            <th>Potential Technical Solutions:</th>
+            <th>Chosen Solution</th>
+          </tr>
+          <tr>
+            <td>Website </td>
+            <td>Interactive, Accessible
+              Fictional automation system. 
+              Marketing of product.
+              Monitor/control the embedded system.
+              Capture Data.
+              Validation Checks.
+              Display front-end features. 
+              </td>
+            <td>Programming features: 
+              HTML
+              Firebase databases 
+              Python
+              JavaScript
+              CSS
+              bootstrap bundle min js
+              bootstrap bundle CSS
+              </td>
+            <td>All </td>
+           
+          </tr>
+          <tr>
+            <td>Embedded System:
+              -	HVAC System 
+              -	Remote/Internet Activated Lights
+               </td>
+            <td>Temperature monitor/control
+              Automated, Air circulating, Energy-efficient
+              Time/triggered locally
+              Sensors, Communication network.
+              </td>
+            <td>Automated fan/temperature sensor 
+              General Purpose Operating System (GPOS) 
+              Real-Time Operating Systems (RTOS) 
+              Microprocessor 
+              Micro:Bit: Microcontroller 
+              Hardware/Software
+            <td>All </td>
+              </td>
+          
+     
+        </table>
+
+     
+  </section>
+  <section id="section-2">
+    <h1>2: Design</h1>
+    <table>
+      <tr>
+        <th>Artefact</th>
+        <th>Design Requirements</th>
+        <th>Programs language /Technical components </th>
+      </tr>
+      <tr>
+        <td>Website </td>
+        <td>As part of this project, we have decided to create a minimum of 7 pages.<br>
+          Home<br>
+          Product<br>
+          Product Detail<br>
+          Login<br>
+          Register<br>
+          Statistics<br>
+          MicoBit Controller
+          </td>
+        <td>Programming features<br>
+          HTML<br>
+          Firebase databases<br>
+          Python<br>
+          Customized JavaScript<br>
+          Customized CSS<br>
+          bootstrap bundle min js<br>
+          bootstrap bundle CSS<br>
+          </td> 
+      </tr>
+      <tr>
+        <td colspan="3"><h3>Overview</h3><p>The objective of the website is to create an online presence for promoting and controlling our appliances.</p>
+          <h4>Description:</h4> The objective of the website is to create an online presence for promoting and controlling our appliances.
+          <h4>Top Navigation Section:</h4> To create a top navigation to display the above pages.
+         <h4>Home Page:</h4> The main webpage of the website and to include company Information.
+         <h4> Products page:</h4> Information about specific products will be displayed. (up to 6 products will be displayed)
+          <h4>Products Detail page (PDP):</h4> Include two “View Demo” buttons. Once clicked a video will be uploaded within the frame. 
+          <h4>Login page:</h4> Create assign Up button and Sign In form with password reset option.
+          <h4>Registration page: </h4> will contain all relevant fields required for registration. Every field will have its own validating rule. 
+          -	All fields must be completed. <br>
+          -	First, last and User name must be alphabet only<br>
+          -	Email must contain @ symbol.<br>
+          -	Password length minimum: < 6 and less than > 12. <br>
+          -	Once completed should be redirected to the index.html page.<br>
+          -	For any violation there must be a popup error message.<br>
+          -	Form not to be submitted unless the checkbox is ticked.<br>
+          -	As soon as the form is submitted, redirect it to the homepage. <br>
+          <h4>Statistics page:</h4> Each graph has daily, weekly, and monthly buttons to show the corresponding statistics. To display the graphs within the webpage, create a CSV file. That CSV file will be then converted to HTML format using Python Script. However, to display the temperature live data, the ThingSpeak platform will be used. 
+          In order to show the live data, we used the ThingSpeak platform instead of the CSV file. 
+          MicroBit Controller page: On/Off buttons will be included on this page to control the lights or any output device. The live temperature sensor will be displayed using the ThingSpeak platform, a platform for IoT analytics. The value of the Firebase database will be changed when the On/Off button is clicked.
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h3>Highlevel Website Design Requiremnts</h3>
+          <br>
+          <img src="img/5.jpg" style="width:1200px; height: auto;">
+        </td>
+      </tr>
+    </table>
+
+  <br>
+
+      <table>
+        <tr>
+          <th>Artefact</th>
+          <th>Design </th>
+          <th>Programs language /Technical components / Material</th>
+        </tr>
+        <tr>
+          <td>Auto Fan</td>
+          <td><img style="width: 100%; height: auto;" src="img/6.png"></td>
+          <td><ul>
+            
+            <li>MicroBit Sensor.</li>
+            <li> 1 x Fan</li>
+            <li> 1 x Micro:bit</li>
+            <li> 1 x USB cable</li>
+            <li> 1 x WiFi Access Point with internet connection </li>
+            <li> 1 x Analog Temperature Sensor</li>
+          </ul>
+          </td>   
+        </tr>
+        <tr>
+          <td colspan="3"><h4>Description:</h4>Description:  HVAC equipment is controlled via temperature sensor to maintain the 
+            desired temperature by heating and Colling system. This module is based on the working principle of a thermistor 
+            (resistance varies with temperature change in the environment). It can sense temperature changes in its surroundings 
+            and send the data to the analog IO in the board. The Heating mode will be activated if the temperature is lower than 18. 
+            If the temperature stays between 18 and 29 degrees, the system will remain off. If the temperature stays above 30, the cooling fan will remain on.
+            </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center;"><h4>Data flow diagram: </h4>
+          <img style="height: auto; width: 800px;" src="img/autoFanFlow.png"></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center;"><h4>System architecture diagram </h4>
+            <img style="height: auto; width: 800px;" src="img/autoFanProcess.png"></td>
+        </tr>
+        <tr>
+          <th>Artifact</th>
+          <th>Design </th>
+          <th>Programs language /Technical components </th>
+        </tr>
+        <tr>
+          <td>Auto Light  IoT</td> 
+          <td>Micro:bit Controller</td>
+          <td>
+            <ul>
+              <li>IoT:bit for Micro:bit (with Internet connectivity)</li>
+              <li> 1 x Micro: bit</li>
+              <li>1 x USB cable</li>
+            </ul>
+          </td>
+        </tr>
+        <tr >
+          <td colspan="3"><h4>Description:</h4>
+            <p>The objective to create a On/Off button to be controlled by the website, and this will in turn On/Off the lights.
+              IoT: bit is an expansion board based on IoT for Micro:bit. It uses ESP8266 as a WIFI expansion board and serial port to communicate with Micro: bit.</p> 
+            <img src="img/IoTFlowDiagram.png" style="height: auto; width: 800px;">
+          </td>
+        </tr>
+      </table>
+  </section>
+  <section id="section-3">
+    <h1>Implementation and Testing: </h1>
+    <h3>Project Timeline: </h3>
+    <p>A project start date and the end date were defined and the below project life cycle was used to manage the program from start to finish. . </p>
+      <img src="img/timeLine.png">
+    <h3>Investigation Stage:</h3>
+    <p>In the investigation phase, I aim to capture the details of each user requirement and to understand the scope of the project and how it will be achieved.</p>
+    <img style="width: 900px; height: auto;" src="img/invastigation.png">
+    <br>
+    <br>
+    <h3>Plan stage</h3>
+    <img style="width: 900px; height: auto;" src="img/plan.png">
+    <h3>Design Stage</h3>
+    <p>During this stage, my goal will be to translate the actual requirements into technical architect design. At this point, I will define the components, programming language, tools, and APIs.</p>
+    <img style="width: 900px; height: auto;" src="img/designStage.png">
+    <h3>Create Stage:</h3>
+    <p>During this stage, I would be focused on writing the actual program as well as developing the website and database.</p>
+    <img style="width: 900px; height: auto;" src="img/createStage.png">
+ 
+    <h3>Evaluation Stage:</h3>
+    <p>During the evaluation phase, I identified the following high-level task. I will test various programs and components to ensure that they work.</p>
+    <img style="width: 900px; height: auto;" src="img/evaluate.png">
+    <h3>Document Stage: </h3>
+    <p>In the documentation stage, the following tasks will be completed. The main focus is to complete the documntaion and to create a website for brief.</p>
+    <img style="width: 900px; height: auto;" src="img/document.png">
+    <br>
+    <br>
+    <h3>Problems encountered during deployment of the artefacts:  </h3>
+    <table>
+      <tr>
+      <td><h4>Problem 1:</h4>Hardware problem: On my Windows computer, the micro:bit was connecting as a drive called MAINTENANCE instead of MICROBIT.  . 
+        I downloaded and updated the micro:bit firmware with micro:bit V2. Once, updated the micro: Bit worked perfectly
+        </td> 
+      <td><img style="height: auto; width: 400px;" src="img/hardwareProb.PNG"></td>        
+      </tr>
+      <tr>
+        <td>
+          Software Code:
+        </td>
+        <td>Pictire</td>
+      </tr>
+      <tr>
+        <td><h4>Problem 2:</h4>         
+           COM 3 port wasn’t opning, which was required to transfer the code within the MicroBit as shown in the diagram.
+              We also found the other software on our laoptop was ustalisng the COM 3 port. This was discovered during the debugging, 
+              once the software was disabled/ closed the connection was established with the Datbase and Microbit.
+        </td>
+        <td><img style="height: auto; width: 400px;" src="img/serial.png"></td>
+      </tr>
+      <tr>
+        <td>Coding Problem: JavaScript validation rues was’t working on the Register page. </td>
+        <td>Picture</td>
+      </tr>
+      <tr>
+        <td>We have used the Plot … library. The CSV file .. However, to solve the issue </td>
+        <td>Picture</td>
+      </tr>
+    </table>
+
+    <h3>Operation of the System: </h3>
+   <table>
+     <tr>
+       <td>Auto Fan</td>
+        <td>
+          1. prepare our Micobit hardware<br>
+          2. Coded the Microbit python<br>
+          3. Downloaded the code in Microbit<br>
+          4: Assemble the Microbit device with IoT sensor.<br>
+          5: Temp sensor connected with the IoT device<br>
+          6. Collect the room temp and send it to the server (thingspeak) for live data visualization.<br>
+          </td>
+          <td>Include video .30 sec</td>
+     </tr>
+     <tr>
+       <td>Auto Light</td>
+       <td>
+        1: Prepare our hardware.<br>
+        2: Coded the MicroBit with python<br>
+        3: Downloaded the code in Microbit using the USB.<br>
+        4: Assembled the MicroBit device with light.<br>
+        5: We created a database within the firebase. The purpose of creating the firebase was to check the status of the devices based on the value On/Off.<br>
+        6: Clicked On/Off button on the Web page, the script sends data to the Firebase. <br>
+        7: Whenever the value is turned On/Off the web page updates the database. Upon turning the value On/Off, the python script on our microbit reads the data and turns the MicroBit device On/Off as per the value.<br>
+        8: In order to communicate with Firebase, Python scripts were written in MicroBit.<br>
+        9: Connected the micro bit with USB within COM3 port.<br>
+        10: Using a web page, we can control the LED Lights remotely. (any output device ).<br>
+        11: The web page updates the firebase database, while the Python script coded within the micro:bit reads the values and controls the device based on the value. (On/Off)<br>
+       </td>
+       <td>Include video .30 sec</td>
+     </tr>
+   </table>
+   <h3>Fundamental programming skills:</h3>
+   <p>Please see below an example of programming skills used throughout the project</p>
+
+   <table>
+     <tr>
+       <th>Programming Skill </th>
+       <th>Examples</th>
+     </tr>
+     <tr>
+      <td>Functions: Function has been used to enhance the readability and to reduce duplication of a program. </td>
+      <td><img src="img/functionValid.png"></td>
+    </tr>
+    <tr>
+      <td>Algorithms: If statements, functions, and loops are used to collect data from Firebase.</td>
+      <td><img src="img/AlgoAll.PNG"></td>
+    </tr>
+    <tr>
+      <td>Iteration code: Use of the while loop for updating the database.</td>
+      <td><img src="img/iteration.PNG"></td>
+    </tr>
+    <tr>
+      <td>Database Table: Created firebase database.</td>
+      <td><img src="img/firebaseDb.PNG"></td>
+    </tr>
+    <tr>
+      <td>Code Structure</td>
+      <td>Indents were created. The following software were used to programme the codes.
+        PyCharm, Visual Studio, Makecode, Firbase, BootStrap, etc 
+        </td>
+    </tr>
+    <tr>
+      <td>Data Types: Datatypes such as Strings were used through the programming. </td>
+      <td><img src="img/dataTypes.PNG"></td>
+    </tr>
+    <tr>
+      <td>Comments: code is commented.</td>
+      <td><img src="img/comments.PNG"></td>
+    </tr>
+   </table>
+
+  <h3>Description and type of testing and User case: </h3>
+  <h3>Integration Tests</h3>
+  <p>To verify that all which individual components that were built work together. We encountered the following issues during the testing, which were later corrected. Please see Pre and post-testing debugs and corrective actions.</p>
+   <table>
+     <tr>
+       <th>Test Case</th>
+       <th>Result (Pass/Fail)</th>
+       <th>Pre - Corrective Action screenshot/ debug</th>
+       <th>Post –Corrective action</th>
+       <th>Post Result (Pass/Fail)</th>
+     </tr>
+      <tr>
+        <td>At the top, click on links to different pages. Verify that the relevant page opens by clicking on each page.</td>
+        <td>Fail</td>
+        <td><img src="img/testcase1.png"></td>
+        <td>The page link was fixed after correcting the herf link. . <br><img style="width:auto; height: auto;" src="img/postCorrect1.png"><br>Also added new page.<br><img  style="width:auto; height: auto;" src="img/postCorrect2.png"></td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Verify the password validation parameters in the "Register" section. It must include one uppercase, one numeric, one special character, and one lowercase character.</td>
+        <td>Pass</td>
+        <td><img style="width: 100%; height: auto;" src="img/postCorrect3.png"></td>
+        <td>N/A. </td>
+        <td>Pass</td>
+      </tr>
+     <!-- <tr>
+        <td>Click the Submit button without checking the check box. Note an alert message. The page should be redirected to the Home page without agreeing to the terms and Conditions check box.</td>
+        <td>Pass</td>
+        <td><img style="width:auto; height: auto;" src="img/postCorrect4.png"></td>
+        <td>Id Tag error was corrected, and the checkbox function and alert message worked perfectly.<br><br>
+          <img style="width:400px; height: 100px;" src="img/postCorrect5.png">
+          <img style="width:auto; height: auto;" src="img/postCorrect6.png">
+        </td>
+        <td>PASS</td>
+      </tr> -->
+      <tr>
+        <td>Complete the registration form and submit it. Check for the alerts and redirect messages</td>
+        <td>Fail</td>
+        <td>The web page generated the alert message however didn't redirect to the home page. </td>
+        <td>The "window.location" object used to get the current page (URL) and to redirect the browser to the index page. <img style="width:auto; height: auto;" src="img/postCorrect7.png">
+        </td></td>
+        <td>PASS</td>
+      </tr>
+   </table>
+   <br><br>
+   <h3>System Testing and functional testing: </h3>
+   <p>System attesting was carried out to ensure that the whole system fulfills the initial requirements such as turning on/off the lights through the webpage. 
+     Function testing was carried out to ensure that its function works correctly. Such API testing was carried out to make sure that graphs' were updated. </p>
+     <table>
+        <tr>
+          <th>Test Case</th>
+          <th>Result (Pass/Fail)</th>
+          <th>Pre - Corrective Action screenshot/ debug</th>
+          <th>Post Corrective action</th>
+          <th>Post Result (Pass/Fail)</th>
+        </tr>
+        <tr>
+          <td>Firebase Database testing. Check that database shows the value of On/Off once the button is clicked from the website.</td>
+          <td>Pass</td>
+          <td>Yes. The lights are turned on and the database changes its value.</td>
+          <td>N/A</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td>Determine whether the Fan automatically turns On/off once the temperature reaches the defined level within the Microbit code.</td>
+          <td>Pass</td>
+          <td>Pass. </td>
+          <td>N/A</td>
+          <td>Yes</td>
+        </tr>
+        <!-- <tr>
+          <td>defined level within the Microbit code.</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr> -->
+        <tr>
+          <td>Check that the Graphs display the live Temperature data variation.</td>
+          <td>Fail</td>
+          <td> <img style="width:auto; height: auto;" src="img/postCorrect8.png"></td>
+          <td>Updated the source code. The website shows the live data.</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td>While clicking the buttons on the webpage, verify that the Graphs display the Monthly, Weekly, and Daily data.</td>
+          <td>Pass</td>
+          <td>Pass. No action required.</td>
+          <td>N/A</td>
+          <td>Pass</td>
+        </tr>
+     </table>
+     <h3>Acceptance Testing:</h3>
+     <p>Acceptance testing was to determine that all the functions worked as per user requirements. </p>
+     <table>
+      <tr>
+        <th>Test Case</th>
+        <th>Result (Pass/Fail)</th>
+        <th>Pre - Corrective Action screenshot/ debug</th>
+        <th>Post Corrective action</th>
+        <th>Post Result (Pass/Fail)</th>
+      </tr>
+      <tr>
+        <td>Check if all the functional and design specifications met the user requirements. </td>
+        <td>Pass</td>
+        <td>N/A. All worked accordingly. </td>
+        <td>N/A</td>
+        <td>Pass</td>
+      </tr>
+     </table>
+    </section>
+    <section id="section-4">
+      <h1>Evaluation</h1>
+      <h3>1.	Explain the extent to which Artefact meets your design objectives.</h3>
+      <p>The smart fan embedded home automation systems and website meet the following objectives:  </p>
+      <table>
+        <tr>
+          <th>Artefacts</th>
+          <th>Objectives </th>
+          <th>Objectives Met/Not:</th>
+          <th>Comment</th>
+        </tr>
+        <tr>
+          <td>Website </td>
+          <td><ul>
+            <li>Interactive</li>
+            <li>Accessible</li>
+            <li>Fictional automation system. </li>
+            <li>Marketing of product </li>
+            <li>Monitor/control the embedded system</li>
+            <li>Capture Data</li>
+            <li>Validation Checks </li>
+            <li>Display front-end features. </li>
+          </ul></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Embedded System</td>
+          <td><ul>
+            <li>Temperature monitor/control</li>
+            <li>Automated fan </li>
+            <li>Air circulating. </li>
+            <li>Energy-efficient</li>
+            <li>Time/triggered locally</li>
+            <li>Sensors</li>
+            <li>Communication network. </li>
+          </ul></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>2. Explain how well the needs of the envisaged end user are met</h3>
+      <p>The product meets the needs of an end user of a person with physical disabilities as it is automatically operated without the need for manual operations. 
+        For persons with intellectual disabilities/older persons with conditions such as dementia that effect cognitive abilities the system functions without 
+        the need to read temperatures/understand thermostat regulation but reducing their risk of hyperthermia in heatwaves. As it operates when necessary only, 
+        it is energy efficient reducing costs for users. </p>
+
+        <h3>3.	Describes with justification how well your artefact could be modified and improved</h3>
+        <p>These systems can be further enhanced and linked to Alexa and other IoT based devices. The temperature sensor can also be used  with aother alerting devices such as Alram/ Buzzar to alert . There is a need to develop a mobile application to control the functionalities.
+          <br> <br>
+          (Revenue in the Smart Home market in the World 2025 | Statista, 2022)
+          As it currently is the system is connected to the Fan, the code can be changed to detect to maintain constant room temperatures to users preference. Alerting systems can be generated to inform users that the temperature had been exceeded beyond a set level which can be altered.  
+          <br> <br>
+          The website can be converted into a mobile app with further control/regulatory functions. 
+          Wireless enabled wearable technology (eg Fit bit) that detect physical temperatures could be programmed to activate external environmental climate control devices. These would be beneficial for persons with high temperature to respond to that 
+          The 
+          <br> <br>
+          wireless-enabled wearable technology, physical fitness monitors and activity trackers such as smartwatches, pedometers and monitors for heart rate, quality of sleep and stairs climbed as well as related software
+          </p>
+    </section>
+  <section id="section-5">
+    <h1>References:</h1>
+    <table>
+      <tr>
+        <td>
+        <p>
+          [1] https://www.statista.com/forecasts/887554/revenue-in-the-smart-home-market-in-the-world <br><br>
+
+          [2] https://www.seai.ie/data-and-insights/seai-statistics/key-statistics/prices/<br><br>
+          
+          [3] https://ourworldindata.org/co2-emissions#:~:text=In%201950%20the%20world%20emitted,34%20billion%20tonnes%20each%20year.<br><br>
+          
+          [4] https://earthobservatory.nasa.gov/images/149321/2021-continued-earths-warming-trend<br><br>
+          [5] https://www.cbc.ca/news/canada/british-columbia/bc-heat-dome-sudden-deaths-revised-2021-1.6232758<br><br>
+          [6] https://www.thejournal.ie/heatwave-deaths-ireland<br><br>
+          [7] https://www.cbc.ca/news/canada/british-columbia/human-rights-watch-heat-dome-1.6200323<br><br>
+          [8] https://www.un.org/esa/socdev/enable/faqs.htm<br><br>
+          [9] https://www.cso.ie/en/releasesandpublications/ep/p-cp9hdc/p8hdc/p9tod/<br><br>
+          [10] https://store.google.com/product/nest_learning_thermostat_3rd_gen<br><br>
+          [11] https://www.intelligentlilli.com/<br><br>
+          [12] https://www.hunterfan.eu/<br><br>
+          [13] https://www.gov.ie/en/publication/60d76-national-housing-strategy-for-disabled-people-2022-2027/#<br><br>
+          [14] https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html <br><br>
+          [15] https://assets.gov.ie/11714/d859109de8984a50b9f2ae2c1f325456.pdf<br><br>
+
+          <h4>Image References used in website:</h4>
+          <br><br>
+          [16] Smart Fan https://www.elecfreaks.com/micro-bit-smart-home-kit.html<br><br>
+          [17] Smart Window https://www.elecfreaks.com/micro-bit-smart-home-kit.html<br><br>
+          [18] Water Level Detector https://www.elecfreaks.com/micro-bit-smart-home-kit.html<br><br>
+          [19] Smart Lights  https://www.elecfreaks.com/learn-en/microbitKit/smart_home_kit/smart_home_kit.html<br><br>
+          [20] Smart Door https://www.access-board.gov/files/ada/guides/entrances.pdf<br><br>
+
+        </p>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <p>
+           <h4> BIBLIOGRAPPHY:</h4>
+            http://www.eastin.eu/en/searches/products/index <br><br>
+            http://www.eastin.eu/en/searches/products/index <br><br>
+            http://www.who.int/features/factfiles/ageing/ageing_facts/en/index.html .<br><br>
+            https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/7604/2185850.pdf<br><br>
+            https://bigassfans.com/residential/  <br><br>
+            https://bigassfans.com/speclab/<br><br>
+            https://electrek.co/2020/03/24/tesla-smart-home-hvac-elon-musk-considers-new-product/)<br><br>
+            https://electrek.co/2020/03/24/tesla-smart-home-hvac-elon-musk-considers-new-product/<br><br>
+            https://emergency.unhcr.org/entry/43935/older-persons<br><br>
+            https://glitch.com/create-project<br><br>
+            https://goldenkey.ie/computer-science-for-leaving-cert/<br><br>
+            https://icsh.ie/icsh-members/national-association-of-housing-for-visually-impaired/<br><br>
+            https://internetofthingsagenda.techtarget.com/definition/embedded-system<br><br>
+            https://makecode.microbit.org/#editor<br><br>
+            https://mightybuildings.com/quatro<br><br>
+            https://pages.silabs.com/rs/634-SLU-379/images/The-Future-of-Smart-Home-Design.pdf<br><br>
+            https://sensibo.com/<br><br>
+            https://smarthon-docs-en.readthedocs.io/en/latest/smartcity/chapter1.html<br><br>
+            https://thingspeak.com/channels/1666843<br><br>
+            https://uk.pcmag.com/smart-home/133953/midea-duo-smart-inverter-portable-air-conditioner<br><br>
+            https://wiki.keyestudio.com/Ks0033_keyestudio_Analog_Temperature_Sensor<br><br>
+            https://www.accenture.com/us-en/services/ai-artificial-intelligence-index<br><br>
+            https://www.ageaction.ie/how-we-can-help/care-and-repair<br><br>
+            https://www.elecfreaks.com/iot-bit-for-micro-bit.html<br><br>
+            https://www.elecfreaks.com/micro-bit-smart-home-kit.html<br><br>
+            https://www.enableireland.ie/sites/default/files/publication/AT%20Paper%20final%20version.pd<br><br>
+            https://www.energy.gov/energysaver/fans-cooling<br><br>
+            https://www.foldhousing.ie/care-services/dementia-support/<br><br>
+            https://www.gov.ie/en/publication/60d76-national-housing-strategy-for-disabled-people-2022-2027/). <br><br>
+            https://www.iwa.ie/national-housing-strategy-for-disabled-people/<br><br>
+            https://www.mayoclinic.org/diseases-conditions/heat-stroke/symptoms-causes/syc-20353581 <br><br>
+            https://www.nbcnews.com/storyline/hot-cars-and-kids/hot-car-deaths-key-facts-about-safety-summer-months-n380306<br><br>
+            https://www.ncbi.ie/<br><br>
+            https://www.noheatstroke.org/<br><br>
+            https://www.nytimes.com/wirecutter/blog/smart-home-devices-save-money-energy/<br><br>
+            https://www.security.org/home-automation/<br><br>
+            https://www.sgeducation.ie/product/elecfreaks-iotbit-for-microbit<br><br>
+            https://www.specbee.com/blogs/how-make-interactive-websites-and-why-you-need-one<br><br>
+            https://www.theguardian.com/cities/2018/aug/15/planning-regulations-overlook-heat-so-developers-build-death-traps<br><br>
+            https://www.theguardian.com/cities/2018/aug/15/planning-regulations-overlook-heat-so-developers-build-death-traps<br><br>
+            https://www.washingtonpost.com/climate-environment/2021/07/02/arizona-mobile-home-deaths/<br><br>
+            https://www.zerocarbonhub.org/sites/default/files/resources/reports/Overheating_in_Homes-Where_to_Start_Introduction_for_Planners_Designers_and_Property_Owners.pdf<br><br>
+            internetofthingsagenda.techtarget.com/definition/smart‐home‐ or‐building [43] <br><br>
+            www.accenture.com/_acnmedia/pdf‐98/accenture‐putting‐ human‐first‐future‐home.pdf <br><br>
+            www.accenture.com/t20170303T051308__w__/us‐ en/_acnmedia/Accenture/Conversion‐ Assets/DotCom/Documents/Global/PDF/Dualpub_26/Accenture‐ The‐Race‐to‐the‐Smart‐Home.pdf  <br><br>
+            www.cso.ie/en/releasesandpublications/ep/p‐ isshh/informationsocietystatistics‐ households2020/smarttechnology/ <br><br>
+            www.security.org/smart‐home/ <br><br>
+            www.youtube.com/watch?v=IC0mkHh7MaA <br><br>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section id="section-6">
+    <h3>Summary Word Count: </h3>
+    <table>
+      <tr>
+        <th>Section</th>
+        <th>Word Count</th>
+      </tr>   
+      <tr>
+        <td>1.	Investigation & Plan</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2.	Design</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3.	Implementation & Testing</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4.	Evaluation </td>
+        <td></td>
+      </tr>
+    </table>
+
+  </section>
+  
+</main>
+<script src="javascript.js"></script>
+<footer>
+  &copy;2018 Footer
+</footer>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <h1>Home Automation System Coursework report</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </header>
+  <nav>
+    <H2 style="color: #ffffff; margin-left: 16px;">Report Content</H3>
+    <ul>
+      <li><a href="Investigate_Plan.html">Investigation and Plan</a></li>
+      <li><a href="Design.html">Design</a></li>
+      <li>
+        <a href="implementation_tetsing.html">Implementation and Testing</a>
+      </li>
+      <li><a href="evaluation.html">Evaluation </a></li>
+      <li><a href="refrences.html">References</a></li>
+      <li><a href="summary_count.html">Summary word count</a></li>
+    </ul>
+  </nav>
+  <body>
+    <section id="section-2">
+      <div style="text-align: right">
+        <button style="text-align: right" onclick="window.print()">
+          Print
+        </button>
+      </div>
+      <h1>2: Design</h1>
+      <table>
+        <tr>
+          <th>Artefact</th>
+          <th>Design Requirements</th>
+          <th>Programs language /Technical components</th>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td>
+            As part of this project, we have decided to create a minimum of 7
+            pages.<br />
+            Home<br />
+            Product<br />
+            Product Detail<br />
+            Login<br />
+            Register<br />
+            Statistics<br />
+            MicoBit Controller
+          </td>
+          <td>
+            Programming features<br />
+            HTML<br />
+            Firebase databases<br />
+            Python<br />
+            Customized JavaScript<br />
+            Customized CSS<br />
+            bootstrap bundle min js<br />
+            bootstrap bundle CSS<br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h3>Overview</h3>
+            <p>
+              The objective of the website is to create an online presence for
+              promoting and controlling our appliances.
+            </p>
+            <h4>Description:</h4>
+            The objective of the website is to create an online presence for
+            promoting and controlling our appliances.
+            <h4>Top Navigation Section:</h4>
+            To create a top navigation to display the above pages.
+            <h4>Home Page:</h4>
+            The main webpage of the website and to include company Information.
+            <h4>Products page:</h4>
+            Information about specific products will be displayed. (up to 6
+            products will be displayed)
+            <h4>Products Detail page (PDP):</h4>
+            Include two “View Demo” buttons. Once clicked a video will be
+            uploaded within the frame.
+            <h4>Login page:</h4>
+            Create assign Up button and Sign In form with password reset option.
+            <h4>Registration page:</h4>
+            will contain all relevant fields required for registration. Every
+            field will have its own validating rule. - All fields must be
+            completed. <br />
+            - First, last and User name must be alphabet only<br />
+            - Email must contain @ symbol.<br />
+            - Password length minimum: < 6 and less than > 12. <br />
+            - Once completed should be redirected to the index.html page.<br />
+            - For any violation there must be a popup error message.<br />
+            - Form not to be submitted unless the checkbox is ticked.<br />
+            - As soon as the form is submitted, redirect it to the homepage.
+            <br />
+            <h4>Statistics page:</h4>
+            Each graph has daily, weekly, and monthly buttons to show the
+            corresponding statistics. To display the graphs within the webpage,
+            create a CSV file. That CSV file will be then converted to HTML
+            format using Python Script. However, to display the temperature live
+            data, the ThingSpeak platform will be used. In order to show the
+            live data, we used the ThingSpeak platform instead of the CSV file.
+            MicroBit Controller page: On/Off buttons will be included on this
+            page to control the lights or any output device. The live
+            temperature sensor will be displayed using the ThingSpeak platform,
+            a platform for IoT analytics. The value of the Firebase database
+            will be changed when the On/Off button is clicked.
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h3>Highlevel Website Design Requiremnts</h3>
+            <br />
+            <img src="img/5.jpg" style="width: 1200px; height: auto" />
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table>
+        <tr>
+          <th>Artefact</th>
+          <th>Design</th>
+          <th>Programs language /Technical components / Material</th>
+        </tr>
+        <tr>
+          <td>Auto Fan</td>
+          <td><img style="width: 100%; height: auto" src="img/6.png" /></td>
+          <td>
+            <ul>
+              <li>MicroBit Sensor.</li>
+              <li>1 x Fan</li>
+              <li>1 x Micro:bit</li>
+              <li>1 x USB cable</li>
+              <li>1 x WiFi Access Point with internet connection</li>
+              <li>1 x Analog Temperature Sensor</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h4>Description:</h4>
+            Description: HVAC equipment is controlled via temperature sensor to
+            maintain the desired temperature by heating and Colling system. This
+            module is based on the working principle of a thermistor (resistance
+            varies with temperature change in the environment). It can sense
+            temperature changes in its surroundings and send the data to the
+            analog IO in the board. The Heating mode will be activated if the
+            temperature is lower than 18. If the temperature stays between 18
+            and 29 degrees, the system will remain off. If the temperature stays
+            above 30, the cooling fan will remain on.
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center">
+            <h4>Data flow diagram:</h4>
+            <img style="height: auto; width: 800px" src="img/autoFanFlow.png" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: center">
+            <h4>System architecture diagram</h4>
+            <img
+              style="height: auto; width: 800px"
+              src="img/autoFanProcess.png"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Artifact</th>
+          <th>Design</th>
+          <th>Programs language /Technical components</th>
+        </tr>
+        <tr>
+          <td>Auto Light IoT</td>
+          <td>Micro:bit Controller</td>
+          <td>
+            <ul>
+              <li>IoT:bit for Micro:bit (with Internet connectivity)</li>
+              <li>1 x Micro: bit</li>
+              <li>1 x USB cable</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h4>Description:</h4>
+            <p>
+              The objective to create a On/Off button to be controlled by the
+              website, and this will in turn On/Off the lights. IoT: bit is an
+              expansion board based on IoT for Micro:bit. It uses ESP8266 as a
+              WIFI expansion board and serial port to communicate with Micro:
+              bit.
+            </p>
+            <img
+              src="img/IoTFlowDiagram.png"
+              style="height: auto; width: 800px"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
